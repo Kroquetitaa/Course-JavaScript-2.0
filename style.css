@@ -1,0 +1,23 @@
+
+body{
+    background-image: url('./images/image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navMenu{
+    margin: 350px;
+    font-size: 1.75rem;
+}
+
+a.nav-link.active{
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    background-color: transparent;
+}
+
+a.nav-link.active:hover{
+    color: aquamarine;
+}
+
