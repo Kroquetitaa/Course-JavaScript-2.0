@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Taller-1</title>
+</head>
+<body>
+    <h1 class="title">Figuras Geométricas</h1>
+    <p>Taller enfocado en el calculo matematico de 3 figuras geometricas</p>
+   
+    <div class="wrapper">
+        <div class="container square-effect">
+            <div class="square">
+                <h1>Cuadrado</h1>
+                <label>Escribe el lado de tu cuadrado</label>
+                <input type="number" id="inputSquare"><br/>
+                <button class="button" onclick="calculatePerimeterSquare()">Perimetro</button>
+                <button class="button" onclick="calculateAreaSquare()">Area</button>
+                <p id="resultSquare"></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="triangle">
+                <h1>Triangulo</h1>
+                <label>Escribe los 2 lados de tu triangulo</label>
+                <input type="number" id="inputSidesTriangle"><br/>
+                <label class="baseTriangle">Escribe la base de tu triangulo</label>
+                <input type="number" id="inputBaseTriangle"><br/>
+                <button class="button" onclick="calculatePerimeterTriangle()">Perimetro</button>
+                <button class="button" onclick="calculateAreaTriangle()">Area</button>
+                <p id="resultTriangle"></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="circle">
+                <h1>Circulo</h1>
+                <label>Esrcribe el radio de tu circulo</label>
+                <input type="number" id="inputRadioCircle"><br/>
+                <button class="button" onclick="calculatePerimeterCircle()">Perimetro</button>
+                <button class="button" onclick="calculateAreaCircle()">Area</button>
+                <button class="button" onclick="calculateDiameterCircle()">Diametro</button>
+                <p id="resultCircle"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

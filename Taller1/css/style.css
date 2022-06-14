@@ -1,0 +1,92 @@
+body {
+    background: url('../images/image1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: monospace;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: sans-serif;
+    justify-items: center;
+}
+
+.container {
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 10%;
+    border: 2px solid wheat;
+    width: 350px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+.container:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+
+.square,
+.triangle,
+.circle {
+    color: aliceblue;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input{
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+button{
+    border-radius: 10%;
+    margin-top: 30px;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    border-color: white;
+    width: 25%;
+}
+
+button:hover{
+    color: black;
+    background: white;
+}
+
+
+#value{
+    color: red;
+    font-weight: bold;
+}
